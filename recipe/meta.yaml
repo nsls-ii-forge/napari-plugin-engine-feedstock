@@ -1,0 +1,37 @@
+{% set name = "napari-plugin-engine" %}
+{% set version = "0.1.6" %}
+{% set sha256 = "5a447d16c9e011ace2d8a4e0384b79c2cc4759cb2a94cc309f8000785d7fdba9" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  number: 0
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python >=3.6
+    - pip
+    - setuptools_scm
+  run:
+    - python >=3.6
+
+test:
+  imports:
+    - napari_plugin_engine
+
+about:
+  home: https://github.com/napari/napari-plugin-engine
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: A fork of pluggy - plugin management package
+  doc_url: https://napari-plugin-engine.readthedocs.io/
+  dev_url: https://github.com/napari/napari-plugin-engine
