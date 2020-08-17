@@ -1,6 +1,6 @@
 {% set name = "napari-plugin-engine" %}
-{% set version = "0.1.6" %}
-{% set sha256 = "5a447d16c9e011ace2d8a4e0384b79c2cc4759cb2a94cc309f8000785d7fdba9" %}
+{% set version = "0.1.7" %}
+{% set sha256 = "48239476b13a21a31bb08e4fe21cb192afba717464bdce9e21ac2fbafed20e96" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
