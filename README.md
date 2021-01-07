@@ -5,11 +5,13 @@ Home: https://github.com/napari/napari-plugin-engine
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/nsls-ii-forge/napari-plugin-engine-feedstock/blob/master/LICENSE.txt)
 
 Summary: A fork of pluggy - plugin management package
 
+Development: https://github.com/napari/napari-plugin-engine
 
+Documentation: https://napari-plugin-engine.readthedocs.io/
 
 Current build status
 ====================
