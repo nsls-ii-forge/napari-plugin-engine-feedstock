@@ -1,6 +1,6 @@
 {% set name = "napari-plugin-engine" %}
-{% set version = "0.1.9" %}
-{% set sha256 = "5b504fe734c3f4df3a64a938982efc1b064b35e96e3e30f0b37a2cb5a2dd21c5" %}
+{% set version = "0.2.0" %}
+{% set sha256 = "fa926f869d70e0d652c005661948cd0c7fee5508ae17d437937f34f5287590b3" %}
 
 package:
   name: {{ name|lower }}
